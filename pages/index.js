@@ -15,7 +15,10 @@ export default function Home() {
           Hello I'm Korn. <br />
           You can also tell me short, that's `Sila`. <br />
           My site is called&nbsp;
-          <a href="https://fResult.dev" target="_blank">fResult website.</a> <br />
+          <a href="https://fResult.dev" target="_blank">
+            fResult website.
+          </a>{' '}
+          <br />
           Thanks.
         </p>
         <p>
