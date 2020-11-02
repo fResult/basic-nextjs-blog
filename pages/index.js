@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import React from 'react'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
@@ -11,7 +10,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p className="">
+        <p className="bg-blue-100">
           Hello I'm Korn. <br />
           You can also tell me short, that's `Sila`. <br />
           My site is called&nbsp;
