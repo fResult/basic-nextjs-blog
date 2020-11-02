@@ -9,8 +9,18 @@
     "format": "prettier --embedded-language-formatting={auto,off} --config .prettierrc '**/*.{ts,tsx,css,scss,json,js,jsx}' --write"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "next": "^10.0.0",
+    "postcss-flexbugs-fixes": "^5.0.0",
+    "postcss-preset-env": "^6.7.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
-  }
+    "react-dom": "16.13.1",
+    "tailwindcss": "^1.9.6"
+  },
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead",
+    "not op_mini all"
+  ]
 }

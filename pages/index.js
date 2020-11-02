@@ -11,11 +11,12 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>
+        <p className="">
           Hello I'm Korn. <br />
           You can also tell me short, that's `Sila`. <br />
-          My site is called <a href="https://fResult.dev">fResult website</a> <br />
-          Thanks
+          My site is called&nbsp;
+          <a href="https://fResult.dev" target="_blank">fResult website.</a> <br />
+          Thanks.
         </p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
