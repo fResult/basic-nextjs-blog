@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import React from 'react'
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
       <main>
@@ -58,8 +60,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          Powered by <img src="vercel.svg" alt="Vercel Logo" className="logo" />
         </a>
       </footer>
 

@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --embedded-language-formatting={auto,off} --config .prettierrc '**/*.{ts,tsx,css,scss,json,js,jsx}'  --write"
+    "format": "prettier --embedded-language-formatting={auto,off} --config .prettierrc '**/*.{ts,tsx,css,scss,json,js,jsx}' --write"
   },
   "dependencies": {
     "next": "^10.0.0",
