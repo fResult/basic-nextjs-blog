@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import React from 'react'
 import Head from 'next/head'
 
 import Layout from '../../components/layout'
@@ -9,12 +9,7 @@ export default function FirstPost() {
       <Head>
         <title>First Post</title>
       </Head>
-      <h1>First Post</h1>
-      <h2>
-        <Link href={'/'}>
-          <a>Back to Home Page</a>
-        </Link>
-      </h2>
+      <h1 className="text-3xl">My First Post</h1>
     </Layout>
   )
 }
