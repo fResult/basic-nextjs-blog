@@ -1,4 +1,4 @@
-const tailwindConfig = {
+module.exports = {
   purge: [
     // Use *.tsx if using TypeScript
     './pages/**/*.js',
@@ -8,5 +8,3 @@ const tailwindConfig = {
   variants: {},
   plugins: []
 }
-
-export default tailwindConfig
