@@ -26,7 +26,7 @@
 }
 
 .borderCircle {
-  border-radius: 9999px;
+  @apply rounded-full;
 }
 
 .colorInherit {
