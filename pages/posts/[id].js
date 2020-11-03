@@ -6,8 +6,8 @@ const Post = ({ post }) => {
   const { id, title, date } = post
   return (
     <Layout>
-      {title} <br/>
-      {id} <br/>
+      {title} <br />
+      {id} <br />
       {date}
     </Layout>
   )
