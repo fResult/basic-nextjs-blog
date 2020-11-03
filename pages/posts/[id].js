@@ -15,7 +15,9 @@ const Post = ({ post }) => {
         <title>{title}</title>
       </Head>
       <h1 className={utilStyles.headingXl}>{title}</h1>
-      <Date fontSize={utilStyles.lightText} {...{ dateStr: date }} />
+      <div className={utilStyles.lightText}>
+        <Date fontSize={utilStyles.lightText} {...{ dateStr: date }} />
+      </div>
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
     </Layout>
   )
