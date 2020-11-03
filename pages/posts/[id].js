@@ -1,14 +1,21 @@
 import React from 'react'
+import dompurify from 'dompurify'
 import Layout from '../../components/layout'
 import { getAllPostIds, getPostDataById } from '../../lib/posts'
+import Head from 'next/head'
+
 
 const Post = ({ post }) => {
-  const { id, title, date } = post
+  const { id, title, date, contentHtml } = post
   return (
     <Layout>
+      <Head>
+        <title>{title}</title>
+      </Head>
       {title} <br />
       {id} <br />
-      {date}
+      {date} <br />
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
     </Layout>
   )
 }
@@ -21,6 +28,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = getPostDataById(params.id)
+  const postData = await getPostDataById(params.id)
   return { props: { post: postData } }
 }
