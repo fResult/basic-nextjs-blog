@@ -1,9 +1,11 @@
 import React from 'react'
-import dompurify from 'dompurify'
-import Layout from '../../components/layout'
-import { getAllPostIds, getPostDataById } from '../../lib/posts'
 import Head from 'next/head'
 
+import { getAllPostIds, getPostDataById } from '../../lib/posts'
+import utilStyles from '../../styles/utils.module.scss'
+
+import Layout from '../../components/layout'
+import Date from '../../components/date'
 
 const Post = ({ post }) => {
   const { id, title, date, contentHtml } = post
@@ -12,9 +14,8 @@ const Post = ({ post }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      {title} <br />
-      {id} <br />
-      {date} <br />
+      <h1 className={utilStyles.headingXl}>{title}</h1>
+      <Date fontSize={utilStyles.lightText} {...{ dateStr: date }} />
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
     </Layout>
   )
