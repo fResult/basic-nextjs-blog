@@ -15,8 +15,8 @@ export default function Home({ allPostsData }) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, title, date }) => (
             <li className={utilStyles.listItem} key={id}>
-              {title} <br/>
-              {id} <br/>
+              {title} <br />
+              {id} <br />
               {date}
             </li>
           ))}
