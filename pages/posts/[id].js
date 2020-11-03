@@ -8,7 +8,7 @@ import Layout from '../../components/layout'
 import Date from '../../components/date'
 
 const Post = ({ post }) => {
-  const { id, title, date, contentHtml } = post
+  const { title, date, contentHtml } = post
   return (
     <Layout>
       <Head>
