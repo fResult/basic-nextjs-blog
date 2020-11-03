@@ -1,17 +1,13 @@
 .heading2Xl {
   font-size: 2.5rem;
   line-height: 1.2;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
-  margin: 1rem 0;
+  @apply mx-0 my-4 tracking-tighter font-extrabold;
 }
 
 .headingXl {
   font-size: 2rem;
   line-height: 1.3;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
-  margin: 1rem 0;
+  @apply mx-0 my-4 tracking-tighter font-extrabold;
 }
 
 .headingLg {
@@ -22,7 +18,7 @@
 
 .headingMd {
   font-size: 1.2rem;
-  line-height: 1.5;
+  @apply leading-6;
 }
 
 .borderCircle {
