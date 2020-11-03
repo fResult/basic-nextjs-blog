@@ -7,7 +7,7 @@ import utilStyles from '../../styles/utils.module.scss'
 import Layout from '../../components/layout'
 import Date from '../../components/date'
 
-const Post = ({ post }) => {
+export default function Post({ post }) {
   const { title, date, contentHtml } = post
   return (
     <Layout>
@@ -22,8 +22,6 @@ const Post = ({ post }) => {
     </Layout>
   )
 }
-
-export default Post
 
 export async function getStaticPaths() {
   const paths = getAllPostIds()
